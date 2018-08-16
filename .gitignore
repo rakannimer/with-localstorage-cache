@@ -1,0 +1,8 @@
+.cache
+.rpt2_cache
+.vscode
+.with-fs-cache
+build
+dist
+node_modules
+
