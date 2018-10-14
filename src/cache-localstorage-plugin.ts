@@ -8,7 +8,13 @@ export const loadCache = (cache: { load: (dump: any) => any }) => {
     cache.load("");
     return "";
   }
-  cache.load(cacheDump);
+  const jsonCache = JSON.parse(cacheDump);
+  for (let cacheItem of jsonCache) {
+    if ("k" in cacheItem && "v" in cacheItem) {
+      const { k, v, e } = cacheItem;
+      cache.set(k, v, e);
+    }
+  }
   return cache;
 };
 
