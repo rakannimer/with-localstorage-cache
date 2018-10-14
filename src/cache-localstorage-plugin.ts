@@ -11,8 +11,8 @@ export const loadCache = (cache: { load: (dump: any) => any }) => {
   const jsonCache = JSON.parse(cacheDump);
   for (let cacheItem of jsonCache) {
     if ("k" in cacheItem && "v" in cacheItem) {
-      const { k, v, e } = cacheItem;
-      cache.set(k, v, e);
+      const { k, v } = cacheItem;
+      store.set(k, v);
     }
   }
   return cache;
