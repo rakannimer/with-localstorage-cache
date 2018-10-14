@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "yarn test",
     "build": "rollup -c",
-    "test": "rollup -c && node build/test.js",
+    "test": "yarn tsc && rollup -c && node build/test.js",
     "prepublish": "yarn build && yarn test",
     "semantic-release": "semantic-release"
   },
