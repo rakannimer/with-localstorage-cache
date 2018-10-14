@@ -1,6 +1,6 @@
-## with-fs-cache
+## with-localstorage-cache
 
-Wrap any method, sync or async with a File System Cache.
+Wrap any method, sync or async with a local storage cache.
 
 ## Usage
 
