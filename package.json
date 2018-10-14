@@ -1,6 +1,6 @@
 {
   "name": "with-localstorage-cache",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "description": "Add a localstorage cache to any function.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -11,7 +11,8 @@
     "dev": "yarn test",
     "build": "rollup -c",
     "test": "rollup -c && node build/test.js",
-    "prepublish": "yarn build && yarn test"
+    "prepublish": "yarn build && yarn test",
+    "semantic-release": "semantic-release"
   },
   "keywords": [],
   "author": "rakannimer",
@@ -29,6 +30,11 @@
     "prettier": "^1.14.0",
     "rollup": "^0.64.1",
     "rollup-plugin-typescript2": "^0.16.1",
-    "typescript": "^3.0.1"
+    "typescript": "^3.0.1",
+    "semantic-release": "^15.9.17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rakannimer/with-localstorage-cache.git"
   }
 }
